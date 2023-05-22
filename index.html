@@ -1,15 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="has-navbar-fixed-top">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/jquery.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <nav class="navbar is-info is-fixed-top" role="navigation">
+        <div class="navbar-brand">
+            <a href="index.html">
+                <img src="https://brothersofchrist.com.ph/assets/img/hero-carousel/BococINC.png" width="50">
+            </a>
 
+            <a role="button" class="navbar-burger">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div class="navbar-menu" id="navMenu">
+            <div class="navbar-end">
+                <a href="" class="navbar-item has-text-weight-bold">
+                    Home
+                </a>
+                <a href="" class="navbar-item has-text-weight-bold">
+                    About
+                </a>
+                <a href="" class="navbar-item has-text-weight-bold">
+                    About BOC
+                </a>
+                <a href="" class="navbar-item has-text-weight-bold">
+                    Programs
+                </a>
+                <a href="" class="navbar-item has-text-weight-bold">
+                    History
+                </a>
+                <a href="" class="navbar-item has-text-weight-bold">
+                    Contact
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section" id="section">
+        <div class="container">
+            <div class="content is-large">
+                <center>
+                    <br>
+                    <img src="https://brothersofchrist.com.ph/assets/img/hero-carousel/BococINC.png" alt="">
+                    <h1 class="has-text-white has-text-shadow">Brothers of Christ of Banneux, Inc.</h1>
+                    <br><br>
+                    <p class="subtitle has-text-white has-text-shadow">Sharing Christ Home.</p>
+                </center>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="content">
+                <p></p>
+            </div>
+        </div>
+    </section>
+    <script>
+        $(document).ready(function () {
+
+            // Check for click events on the navbar burger icon
+            $(".navbar-burger").click(function () {
+
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                $(".navbar-burger").toggleClass("is-active");
+                $(".navbar-menu").toggleClass("is-active");
+
+            });
+        });
+    </script>
 </body>
 
 </html>

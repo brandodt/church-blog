@@ -1,0 +1,11 @@
+@import "./bulma/css/bulma.css";
+
+#section {
+  background-image: url("https://brothersofchrist.com.ph/assets/img/new-hero-bg.JPG");
+  background-position: center;
+  background-size: cover;
+}
+
+.has-text-shadow {
+  text-shadow: 0px 0px 50px rgba(0, 110, 255, 1);
+}
