@@ -11,6 +11,22 @@ html {
   background-size: cover;
 }
 
+html.has-navbar-fixed-top body section#home.section div.container.content.is-large {
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .has-text-shadow-blue {
   text-shadow: 0px 0px 50px rgba(0, 110, 255, 1);
 }
