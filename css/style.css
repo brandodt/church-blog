@@ -11,6 +11,10 @@ html {
   background-size: cover;
 }
 
-.has-text-shadow {
+.has-text-shadow-blue {
   text-shadow: 0px 0px 50px rgba(0, 110, 255, 1);
+}
+
+.has-text-shadow-black {
+  text-shadow: 0px 0px 3px rgb(0, 0, 0);
 }
