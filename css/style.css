@@ -1,10 +1,11 @@
 @import "./bulma/css/bulma.css";
-
-
 html {
   scroll-behavior: smooth;
 }
 
+html::-webkit-scrollbar {
+  display: none;
+}
 #home {
   background-image: url("https://brothersofchrist.com.ph/assets/img/new-hero-bg.JPG");
   background-position: center;
