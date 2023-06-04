@@ -57,3 +57,10 @@ html.has-navbar-fixed-top
 .center {
   text-align: center;
 }
+
+.circle {
+  border-radius: 40%;
+  border: 2px solid;
+  border-color: black;
+  width: 15rem;
+}
