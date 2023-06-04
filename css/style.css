@@ -7,7 +7,7 @@ html::-webkit-scrollbar {
   display: none;
 }
 #home {
-  background-image: url("https://brothersofchrist.com.ph/assets/img/new-hero-bg.JPG");
+  background-image: url("../img/new-hero-bg.JPG");
   background-position: center;
   background-size: cover;
 }
