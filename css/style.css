@@ -6,13 +6,17 @@ html {
 html::-webkit-scrollbar {
   display: none;
 }
+
 #home {
   background-image: url("../img/new-hero-bg.JPG");
   background-position: center;
   background-size: cover;
 }
 
-html.has-navbar-fixed-top body section#home.section div.container.content.is-large {
+html.has-navbar-fixed-top
+  body
+  section#home.section
+  div.container.content.is-large {
   animation: fadeInAnimation ease 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -34,4 +38,8 @@ html.has-navbar-fixed-top body section#home.section div.container.content.is-lar
 
 .has-text-shadow-black {
   text-shadow: 0px 0px 3px rgb(0, 0, 0);
+}
+
+.center {
+  text-align: center;
 }
