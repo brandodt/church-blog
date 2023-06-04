@@ -16,10 +16,24 @@ html::-webkit-scrollbar {
 html.has-navbar-fixed-top
   body
   section#home.section
-  div.container.content.is-large {
+  div.container.content.is-large,
+#home > div.has-text-centered {
   animation: fadeInAnimation ease 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+}
+
+#home > div.columns.is-centered {
+  animation: animatezoom 0.6s;
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 @keyframes fadeInAnimation {
