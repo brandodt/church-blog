@@ -12,7 +12,7 @@ html::-webkit-scrollbar {
   background-position: center;
   background-size: cover;
 }
-
+/*
 html.has-navbar-fixed-top
   body
   section#home.section
@@ -44,7 +44,7 @@ html.has-navbar-fixed-top
   100% {
     opacity: 1;
   }
-}
+}*/
 
 .has-text-shadow-blue {
   text-shadow: 0px 0px 50px rgba(0, 110, 255, 1);
