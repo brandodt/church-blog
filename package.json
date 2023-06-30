@@ -1,0 +1,13 @@
+{
+    "name": "church-blog",
+    "version": "1.0.0",
+    "description": "Website: https://bcbi.netlify.app/",
+    "main": "sass/mystyles.scss",
+    "scripts": {
+        "css-build": "node-sass --omit-source-map-url sass/mystyles.scss css/bulma.css",
+        "css-watch": "npm run css-build -- --watch",
+        "start": "npm run css-watch"
+    },
+    "author": "",
+    "license": "ISC"
+}
