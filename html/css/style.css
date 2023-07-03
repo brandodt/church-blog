@@ -1,0 +1,89 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+#home {
+  background-image: url("../img/new-hero-bg.JPG");
+  background-position: center;
+  background-size: cover;
+}
+
+.has-text-shadow-blue {
+  text-shadow: 0px 0px 50px rgba(0, 110, 255, 1);
+}
+
+.has-text-shadow-black {
+  text-shadow: 0px 0px 3px rgb(0, 0, 0);
+}
+
+.center {
+  text-align: center;
+}
+
+.circle {
+  border-radius: 40%;
+  border: 2px solid;
+  border-color: black;
+  width: 15rem;
+}
+
+.box {
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+  color: #4a4a4a;
+  display: block;
+  padding: 1.25rem;
+}
+
+.card-image {
+  display: block;
+  position: relative;
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+  color: #4a4a4a;
+  max-width: 100%;
+  position: relative;
+}
+
+/* ANIMATION */
+html.has-navbar-fixed-top body section#home.section div.container.content.is-large,
+#home>div.has-text-centered {
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+#home>div.columns.is-centered {
+  animation: animatezoom 0.6s;
+}
+
+/* KEYFRAMES for ANIMATION */
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
