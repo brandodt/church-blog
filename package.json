@@ -9,5 +9,9 @@
         "start": "npm run css-watch"
     },
     "author": "",
-    "license": "ISC"
+    "license": "ISC",
+    "devDependencies": {
+        "bulma": "^0.9.4",
+        "node-sass": "^9.0.0"
+    }
 }

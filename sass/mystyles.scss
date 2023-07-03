@@ -1,7 +1,8 @@
 @charset "utf-8";
 
 // Import a Google Font
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+//@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&display=swap');
 
 // Set your brand colors
 $purple: #8A4D76;
@@ -11,14 +12,16 @@ $beige-light: #D0D1CD;
 $beige-lighter: #EFF0EB;
 
 // Update Bulma's global variables
-$family-sans-serif: "Nunito", sans-serif;
+//$family-sans-serif: "Nunito", sans-serif;
+$family-sans-serif: 'Red Hat Display', sans-serif;
 //$grey-dark: $brown;
 //$grey-light: $beige-light;
 //$primary: $purple;
 //$link: $pink;
 //$widescreen-enabled: false;
 //$fullhd-enabled: false;
-
+$menu-item-active-background-color: hsl(207, 61%, 53%);
+$menu-item-radius: $radius-large;
 // Update some of Bulma's component variables
 //$body-background-color: $beige-lighter;
 //$control-border-width: 2px;
@@ -26,3 +29,11 @@ $family-sans-serif: "Nunito", sans-serif;
 //$input-shadow: none;
 
 @import "../css/bulma/bulma.sass";
+@import "../css/bulma/sass/utilities/_all.sass";
+@import "../css/bulma/sass/base/_all.sass";
+@import "../css/bulma/sass/elements/_all.sass";
+@import "../css/bulma/sass/form/_all.sass";
+@import "../css/bulma/sass/components/_all.sass";
+@import "../css/bulma/sass/grid/_all.sass";
+@import "../css/bulma/sass/helpers/_all.sass";
+@import "../css/bulma/sass/layout/_all.sass";
