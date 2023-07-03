@@ -12,21 +12,21 @@ $beige-light: #D0D1CD;
 $beige-lighter: #EFF0EB;
 
 // Update Bulma's global variables
-//$family-sans-serif: "Nunito", sans-serif;
 $family-sans-serif: 'Red Hat Display', sans-serif;
 //$grey-dark: $brown;
 //$grey-light: $beige-light;
 //$primary: $purple;
 //$link: $pink;
-//$widescreen-enabled: false;
-//$fullhd-enabled: false;
-//$menu-item-active-background-color: $primary;
-$menu-item-radius: $radius-large;
 
 // Update some of Bulma's component variables
+@import "../../node_modules/bulma/sass/utilities/_all.sass";
+
 //$body-background-color: $beige-lighter;
 //$control-border-width: 2px;
 //$input-border-color: transparent;
 //$input-shadow: none;
+$menu-item-active-background-color: $cyan;
+$menu-item-radius: $radius-large;
 
+// Import only what you need from Bulma
 @import "../../node_modules/bulma/bulma.sass";
