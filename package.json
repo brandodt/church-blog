@@ -4,14 +4,17 @@
     "description": "Website: https://bcbi.netlify.app/",
     "main": "sass/mystyles.scss",
     "scripts": {
-        "css-build": "node-sass --omit-source-map-url sass/mystyles.scss css/bulma.css",
+        "css-build": "node-sass --omit-source-map-url html/scss/style.scss css/bulma.css",
         "css-watch": "npm run css-build -- --watch",
         "start": "npm run css-watch"
     },
     "author": "",
-    "license": "ISC",
+    "license": "MIT",
     "devDependencies": {
         "bulma": "^0.9.4",
         "node-sass": "^9.0.0"
+    },
+    "dependencies": {
+        "bulma-extensions": "^6.2.7"
     }
 }
