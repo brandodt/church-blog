@@ -27,6 +27,7 @@ $family-sans-serif: 'Red Hat Display', sans-serif;
 //$input-shadow: none;
 $menu-item-active-background-color: $cyan;
 $menu-item-radius: $radius-large;
+$input-disabled-color: $text-strong;
 
 // Import only what you need from Bulma
 @import "../../node_modules/bulma/bulma.sass";
