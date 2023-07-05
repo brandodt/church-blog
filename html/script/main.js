@@ -15,3 +15,15 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+
+// Restrict input to only numeric values
+document.getElementById('phone-input').addEventListener('input', function (e) {
+    e.target.value = e.target.value.replace(/\D/g, '');
+});
+
+// Prevent clearing of input on non-numeric keypress
+document.getElementById('phone-input').addEventListener('keypress', function (e) {
+    if (isNaN(e.key)) {
+        e.preventDefault();
+    }
+});
