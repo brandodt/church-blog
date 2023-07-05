@@ -62,7 +62,7 @@ html::-webkit-scrollbar {
     transition: 0.8s;
   }
 
-  .menu-list li a:hover {
+  .menu-list li a:not(.is-active):hover {
     background-color: #f5f5f5;
     transition: 0.3s;
   }
