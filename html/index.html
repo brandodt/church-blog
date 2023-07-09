@@ -14,10 +14,11 @@
 </head>
 
 <body>
-    <nav class="navbar is-info is-fixed-top" role="navigation">
-        <div class="navbar-brand ml-3">
+    <!-- <nav class="navbar is-info is-fixed-top" role="navigation"> -->
+    <nav class="navbar is-spaced is-fixed-top is-info">
+        <div class="navbar-brand mx-3">
             <a href="index.html">
-                <img src="img/logo.png" width="45">
+                <img src="img/logo.png" width="50">
             </a>
 
             <a role="button" class="navbar-burger">
@@ -29,34 +30,50 @@
 
         <div class="navbar-menu" id="navMenu">
             <div class="navbar-start">
-                <a href="#home" class="navbar-item has-text-weight-light">
+                <a href="#home" class="navbar-item ml-2">
                     Home
                 </a>
-                <a href="#about" class="navbar-item has-text-weight-light">
+                <a href="#about" class="navbar-item ml-2">
                     About
                 </a>
-                <a href="#boc" class="navbar-item has-text-weight-light">
+                <a href="#boc" class="navbar-item ml-2">
                     About BOC
                 </a>
-                <a href="#programs" class="navbar-item has-text-weight-light">
+                <a href="#programs" class="navbar-item ml-2">
                     Programs
                 </a>
-                <a href="#history" class="navbar-item has-text-weight-light">
+                <a href="#history" class="navbar-item ml-2">
                     History
                 </a>
-                <a href="#watch-live" class="navbar-item has-text-weight-light">
+                <a href="#watch-live" class="navbar-item has-text-weight-bold has-text-danger-dark ml-2">
                     Watch Live
                 </a>
-                <a href="#contact" class="navbar-item has-text-weight-light">
+                <a href="#contact" class="navbar-item ml-2">
                     Contact
                 </a>
             </div>
 
             <div class="navbar-end mx-3">
-                <div class="buttons">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        Account
+                    </a>
+                    <div class="navbar-dropdown is-right">
+                        <a href="login.html" class="navbar-item">
+                            Login
+                        </a>
+                        <a href="register.html" class="navbar-item">
+                            Register
+                        </a>
+                        <a href="dashboard/index.html" class="navbar-item">
+                            My Profile
+                        </a>
+                    </div>
+                </div>
+                <!-- <div class="buttons">
                     <a href="login.html" class="button is-link is-rounded is-small has-text-weight-bold">Login</a>
                     <a href="register.html" class="button is-link is-rounded is-small has-text-weight-bold">Register</a>
-                </div>
+                </div> -->
             </div>
         </div>
     </nav>
