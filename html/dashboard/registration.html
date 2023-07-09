@@ -48,6 +48,7 @@
 
     <section class="section">
         <div class="container">
+
             <div class="notification is-info is-light">
                 <button class="delete is-large"></button>
                 <p class="title">Student Portal</p>
@@ -75,7 +76,7 @@
                             <li><a href="index.html">Dashboard</a></li>
                             <li><a href="profile.html">Profile</a></li>
                             <li><a href="grades.html">Grades</a></li>
-                            <li><a href="#" class="is-active">Enrolled Subject</a></li>
+                            <li><a href="subjects.html">Enrolled Subject</a></li>
                         </ul>
                         <p class="menu-label">Transaction</p>
                         <ul class="menu-list">
@@ -84,7 +85,7 @@
                         <p class="menu-label">Portal</p>
                         <ul class="menu-list">
                             <li><a href="account.html">Account</a></li>
-                            <li><a href="registration.html">Registration</a></li>
+                            <li><a href="#" class="is-active">Registration</a></li>
                         </ul>
                     </aside>
                 </div>
@@ -95,64 +96,61 @@
                             <div class="tile is-9 is-vertical is-parent">
                                 <div class="tile is-child card">
                                     <header class="card-header">
-                                        <p class="card-header-title">Enrolled Subject</p>
+                                        <p class="card-header-title">Registration</p>
                                     </header>
-                                    <div class="card-content table-container content">
-                                        <table class="table is-hoverable is-striped">
-                                            <thead>
-                                                <tr>
-                                                    <th>Subject</th>
-                                                    <th>Room</th>
-                                                    <th>Instructor</th>
-                                                    <th>Schedule<br>(Day)</th>
-                                                    <th>Schedule<br>(Time)</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th><abbr title="Araling Panlipunan">AP</abbr></th>
-                                                    <td>101</td>
-                                                    <td>Muñoz, Eduardo</td>
-                                                    <td>MON | WED</td>
-                                                    <td>8:00 AM - 10:00 AM</td>
-                                                </tr>
-                                                <tr>
-                                                    <th><abbr title="English">ENG</abbr></th>
-                                                    <td>105</td>
-                                                    <td>Torres, Jose Antonio</td>
-                                                    <td>TUE | THU</td>
-                                                    <td>10:30 AM - 12:00 PM</td>
-                                                </tr>
-                                                <tr>
-                                                    <th><abbr title="Filipino">FIL</abbr></th>
-                                                    <td>105</td>
-                                                    <td>Perez, Jesus</td>
-                                                    <td>MON | THU</td>
-                                                    <td>1:00 PM - 2:30 PM</td>
-                                                </tr>
-                                                <tr>
-                                                    <th><abbr title="Music, Arts, PE, Health">MAPEH</abbr></th>
-                                                    <td>Gymnasium</td>
-                                                    <td>Velasco, Joaquin</td>
-                                                    <td>TUE | FRI</td>
-                                                    <td>8:00 AM - 10:00 AM</td>
-                                                </tr>
-                                                <tr>
-                                                    <th>MATH</th>
-                                                    <td>101</td>
-                                                    <td>Roman, Oscar</td>
-                                                    <td>WED | FRI</td>
-                                                    <td>10:30 AM - 12:00 PM</td>
-                                                </tr>
-                                                <tr>
-                                                    <th>RELIGION</th>
-                                                    <td>Main Chapel</td>
-                                                    <td>Fr. Stuartz, Frank</td>
-                                                    <td>MON - SAT</td>
-                                                    <td>7:00 AM - 8:00 AM<br>5:00 PM - 6:00 PM</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                    <div class="card-content content">
+                                        <div class="columns is-centered">
+                                            <div class="column is-half has-text-centered">
+                                                <p class="title is-4">Upload</p>
+                                                <div class="select is-info">
+                                                    <select>
+                                                        <option>Select a form</option>
+                                                        <option>Form - 137</option>
+                                                        <option>Birth Certificate</option>
+                                                        <option>Certificate of Baptismal</option>
+                                                    </select>
+                                                </div>
+                                                <div class="file is-boxed is-info is-centered mt-2">
+                                                    <label class="file-label">
+                                                        <input class="file-input" type="file" name="boc_document">
+                                                        <span class="file-cta">
+                                                            <span class="file-icon">
+                                                                <i class="fas fa-cloud-upload-alt"></i>
+                                                            </span>
+                                                            <span class="file-label">
+                                                                Upload
+                                                            </span>
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="has-text-centered">
+                                            <p class="title is-4">Download</p>
+                                            <div class="select is-info">
+                                                <select>
+                                                    <option>Select a form</option>
+                                                    <option>Form - 138</option>
+                                                    <option>Registration Form</option>
+                                                    <option>Proof of Transactions</option>
+                                                </select>
+                                            </div>
+                                            <div class="file is-boxed is-info is-centered mt-2">
+                                                <a href="files/sample.pdf" download>
+                                                    <label class="file-label">
+                                                        <span class="file-cta">
+                                                            <span class="file-icon">
+                                                                <i class="fas fa-cloud-download-alt"></i>
+                                                            </span>
+                                                            <span class="file-label">
+                                                                Download
+                                                            </span>
+                                                        </span>
+                                                    </label>
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

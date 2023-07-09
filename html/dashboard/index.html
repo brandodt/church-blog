@@ -13,10 +13,10 @@
 </head>
 
 <body>
-    <nav class="navbar is-info is-fixed-top" role="navigation">
+    <nav class="navbar is-info is-fixed-top is-spaced" role="navigation">
         <div class="navbar-brand ml-3">
             <a href="index.html">
-                <img src="../img/logo.png" width="45">
+                <img src="../img/logo.png" width="50">
             </a>
             <p class="pl-6 pt-4">Brothers of Christ of Banneux, Inc.
             <p>
@@ -24,9 +24,23 @@
 
         <div class="navbar-menu" id="navMenu">
             <div class="navbar-end">
-                <div class="buttons">
-                    <a href="../login.html"
-                        class="button is-link is-rounded has-text-weight-bold is-small mx-3">Logout</a>
+                <a class="navbar-item my-modal-trigger p-4">
+                    <div class="icon-text">
+                        <span class="icon">
+                            <i class="fas fa-power-off"></i>
+                        </span>
+                    </div>
+                </a>
+                <div class="modal my-modal">
+                    <div class="modal-background"></div>
+                    <div class="modal-content">
+                        <div class="box zoom has-text-centered p-6">
+                            <p class="has-text-weight-bold">Are you sure you want to logout?</p>
+                            <br>
+                            <a class="is-success button mr-3" href="../login.html">Yes</a>
+                            <a class="is-danger button" id="cancel">No</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -67,7 +81,6 @@
                         <p class="menu-label">Transaction</p>
                         <ul class="menu-list">
                             <li><a href="balance.html">Balance</a></li>
-                            <li><a href="transactions.html">Proof of Transactions</a></li>
                         </ul>
                         <p class="menu-label">Portal</p>
                         <ul class="menu-list">
@@ -205,6 +218,67 @@
             </div>
         </div>
     </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-3">
+                    <p class="title is-3 has-text-weight-bold">BCBI</p>
+                    <p class="subtitle is-6">Brothers of Christ of Banneux, Inc.</p>
+                    <p class="subtitle is-6">© Copyright BCBI. All Rights Reserved</p>
+                </div>
+                <div class="column is-4">
+                    <p class="title is-6 has-text-weight-bold">Useful Links
+                    <div class="icon-text">
+                        <span class="icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+                        <a href="../index.html#home">Home</a>
+                    </div>
+                    <div class="icon-text">
+                        <span class="icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+                        <a href="../index.html#about">About</a>
+                    </div>
+                    <div class="icon-text">
+                        <span class="icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+                        <a href="../index.html#boc">BOC</a>
+                    </div>
+                    <div class="icon-text">
+                        <span class="icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+                        <a href="../index.html#programs">Program</a>
+                    </div>
+                    <div class="icon-text">
+                        <span class="icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+                        <a href="../index.html#history">History</a>
+                    </div>
+                    </p>
+                </div>
+                <div class="column is-5">
+                    <p class="title is-6 has-text-weight-bold">Panel
+                    <div class="icon-text">
+                        <span class="icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+                        <a href="../login.html">Login</a>
+                    </div>
+                    <div class="icon-text">
+                        <span class="icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+                        <a href="../register.html">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../script/main.js"></script>
 </body>
 
 </html>
