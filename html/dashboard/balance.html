@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brothers of Christ of Banneux, Inc.</title>
+    <link rel="stylesheet" href="../css/bulma.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar is-info is-fixed-top is-spaced" role="navigation">
+        <div class="navbar-brand ml-3">
+            <a href="index.html">
+                <img src="../img/logo.png" width="50">
+            </a>
+            <p class="pl-6 pt-4">Brothers of Christ of Banneux, Inc.
+            <p>
+        </div>
+
+        <div class="navbar-menu" id="navMenu">
+            <div class="navbar-end">
+                <a class="navbar-item my-modal-trigger p-4">
+                    <div class="icon-text">
+                        <span class="icon">
+                            <i class="fas fa-power-off"></i>
+                        </span>
+                    </div>
+                </a>
+                <div class="modal my-modal">
+                    <div class="modal-background"></div>
+                    <div class="modal-content">
+                        <div class="box zoom has-text-centered p-6">
+                            <p class="has-text-weight-bold">Are you sure you want to logout?</p>
+                            <br>
+                            <a class="is-success button mr-3" href="../login.html">Yes</a>
+                            <a class="is-danger button" id="cancel">No</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+
+            <div class="notification is-info is-light">
+                <button class="delete is-large"></button>
+                <p class="title">Student Portal</p>
+                <p class="subtitle">
+                    Welcome to <b>BCBI Student Portal</b>. Please take note that school
+                    records are not directly connected to the website records. Therefore, enrollment transactions
+                    made
+                    in campus will not immediately reflect in the website. For questions, inquiries or bug reports
+                    regarding the portal please contact the MIS office.
+                </p>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <div class="columns">
+                <div class="column is-2">
+                    <aside class="menu has-text-centered">
+                        <figure class="image is-128x128 is-inline-block">
+                            <img class="is-rounded" src="../img/profile.png">
+                        </figure>
+                        <p class="title has-text-centered pt-3 is-5">Lance Listana</p>
+                        <p class="subtitle has-text-centered is-6">136000123</p>
+                        <p class="menu-label">General</p>
+                        <ul class="menu-list">
+                            <li><a href="index.html">Dashboard</a></li>
+                            <li><a href="profile.html">Profile</a></li>
+                            <li><a href="grades.html">Grades</a></li>
+                            <li><a href="subjects.html">Enrolled Subject</a></li>
+                        </ul>
+                        <p class="menu-label">Transaction</p>
+                        <ul class="menu-list">
+                            <li><a href="#" class="is-active">Balance</a></li>
+                        </ul>
+                        <p class="menu-label">Portal</p>
+                        <ul class="menu-list">
+                            <li><a href="account.html">Account</a></li>
+                            <li><a href="registration.html">Registration</a></li>
+                        </ul>
+                    </aside>
+                </div>
+
+                <div class="column">
+                    <section class="info-tiles mt-3">
+                        <div class="tile is-ancestor">
+                            <div class="tile is-9 is-vertical is-parent">
+                                <div class="tile is-child card">
+                                    <header class="card-header">
+                                        <p class="card-header-title">Grades</p>
+                                    </header>
+                                    <div class="card-content content has-text-centered">
+                                        <table class="table is-hoverable is-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>Term</th>
+                                                    <th>Fee</th>
+                                                    <th>Remaining</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Registration</td>
+                                                    <td>1282.00</td>
+                                                    <td class="has-text-info has-text-weight-bold">Paid</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Prelim</td>
+                                                    <td>1870.00</td>
+                                                    <td class="has-text-info has-text-weight-bold">Paid</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Midterm</td>
+                                                    <td>1358.00</td>
+                                                    <td class="has-text-info has-text-weight-bold">Paid</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Finals</td>
+                                                    <td>2657.00</td>
+                                                    <td class="has-text-info has-text-weight-bold">Paid</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <hr>
+                                        <table class="table is-hoverable is-striped">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Total Fee</th>
+                                                    <td class="has-text-info has-text-weight-bold">7167.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Total Paid</th>
+                                                    <td class="has-text-info has-text-weight-bold">7167.00</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tile is-parent">
+                                <div class="tile is-child card">
+                                    <header class="card-header">
+                                        <p class="card-header-title">Quick Links</p>
+                                    </header>
+
+                                    <div class="card-content has-text-centered content">
+                                        <figure class="image is-128x128 is-inline-block">
+                                            <a href="../index.html">
+                                                <img src="../img/logo.png">
+                                                Main Website
+                                            </a>
+                                        </figure>
+
+                                        <figure class="image is-128x128 is-inline-block">
+                                            <a href="https://fb.me/BOCPhilippines"><img src="../img/bcbiboc.png"
+                                                    alt="">BCBI
+                                                Page</a>
+                                        </figure>
+
+                                        <figure class="image is-128x128 is-inline-block">
+                                            <a href="https://fb.me/bocmemories">
+                                                <img src="../img/bocmem.png" alt="">
+                                                BOC Memories
+                                            </a>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-3">
+                    <p class="title is-3 has-text-weight-bold">BCBI</p>
+                    <p class="subtitle is-6">Brothers of Christ of Banneux, Inc.</p>
+                    <p class="subtitle is-6">© Copyright BCBI. All Rights Reserved</p>
+                </div>
+                <div class="column is-4">
+                    <p class="title is-6 has-text-weight-bold">Useful Links
+                    <div class="icon-text">
+                        <span class="icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+                        <a href="../index.html#home">Home</a>
+                    </div>
+                    <div class="icon-text">
+                        <span class="icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+                        <a href="../index.html#about">About</a>
+                    </div>
+                    <div class="icon-text">
+                        <span class="icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+                        <a href="../index.html#boc">BOC</a>
+                    </div>
+                    <div class="icon-text">
+                        <span class="icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+                        <a href="../index.html#programs">Program</a>
+                    </div>
+                    <div class="icon-text">
+                        <span class="icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+                        <a href="../index.html#history">History</a>
+                    </div>
+                    </p>
+                </div>
+                <div class="column is-5">
+                    <p class="title is-6 has-text-weight-bold">Panel
+                    <div class="icon-text">
+                        <span class="icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+                        <a href="../login.html">Login</a>
+                    </div>
+                    <div class="icon-text">
+                        <span class="icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+                        <a href="../register.html">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../script/main.js"></script>
+</body>
+
+</html>
