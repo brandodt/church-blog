@@ -99,19 +99,27 @@
                                     <header class="card-header">
                                         <p class="card-header-title">Registration</p>
                                     </header>
-                                    <div class="card-content content">
+                                    <div class="card-content content has-text-centered">
                                         <div class="columns is-centered">
-                                            <div class="column is-half has-text-centered">
+                                            <div class="column is-4">
                                                 <p class="title is-4">Upload</p>
-                                                <div class="select is-info">
-                                                    <select>
+                                                <div class="select is-info is-fullwidth">
+                                                    <select onchange="toggleInput(this)">
                                                         <option>Select a form</option>
                                                         <option>Form - 137</option>
                                                         <option>Birth Certificate</option>
                                                         <option>Certificate of Baptismal</option>
+                                                        <option>(not in the choices)</option>
                                                     </select>
                                                 </div>
-                                                <div class="file is-boxed is-info is-centered mt-2">
+                                                <div class="field mt-2">
+                                                    <div class="control">
+                                                        <input class="input is-small is-info" type="text"
+                                                            name="my_form_input" placeholder="Enter your form type"
+                                                            disabled>
+                                                    </div>
+                                                </div>
+                                                <div class="file is-boxed is-info is-centered mt-2 zoom">
                                                     <label class="file-label">
                                                         <input class="file-input" type="file" name="boc_document">
                                                         <span class="file-cta">
@@ -127,29 +135,31 @@
                                             </div>
                                         </div>
                                         <hr>
-                                        <div class="has-text-centered">
-                                            <p class="title is-4">Download</p>
-                                            <div class="select is-info">
-                                                <select>
-                                                    <option>Select a form</option>
-                                                    <option>Form - 138</option>
-                                                    <option>Registration Form</option>
-                                                    <option>Proof of Transactions</option>
-                                                </select>
-                                            </div>
-                                            <div class="file is-boxed is-info is-centered mt-2">
-                                                <a href="files/sample.pdf" download>
-                                                    <label class="file-label">
-                                                        <span class="file-cta">
-                                                            <span class="file-icon">
-                                                                <i class="fa-solid fa-download"></i>
+                                        <div class="columns is-centered">
+                                            <div class="column is-4">
+                                                <p class="title is-4">Download</p>
+                                                <div class="select is-info is-fullwidth">
+                                                    <select>
+                                                        <option>Select a form</option>
+                                                        <option>Form - 138</option>
+                                                        <option>Registration Form</option>
+                                                        <option>Proof of Transactions</option>
+                                                    </select>
+                                                </div>
+                                                <div class="file is-boxed is-info is-centered mt-2 zoom">
+                                                    <a href="files/sample.pdf" download>
+                                                        <label class="file-label">
+                                                            <span class="file-cta">
+                                                                <span class="file-icon">
+                                                                    <i class="fa-solid fa-download"></i>
+                                                                </span>
+                                                                <span class="file-label">
+                                                                    Download
+                                                                </span>
                                                             </span>
-                                                            <span class="file-label">
-                                                                Download
-                                                            </span>
-                                                        </span>
-                                                    </label>
-                                                </a>
+                                                        </label>
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

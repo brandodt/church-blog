@@ -114,3 +114,10 @@ document.querySelectorAll(".modal-background, button.delete")
             document.documentElement.classList.remove("is-clipped"); // Remove class from <html> element
         });
     });
+
+//registration.html
+
+function toggleInput(select) {
+    var input = document.querySelector('[name="my_form_input"]');
+    input.disabled = (select.value !== "(not in the choices)");
+}
