@@ -56,8 +56,7 @@ html::-webkit-scrollbar {
 
 @media screen and (min-width: 1024px) {
 
-  .navbar-item:hover,
-  .navbar-link:hover {
+  .navbar-item:hover {
     background-color: #3082C5;
     transition: 0.8s;
   }
